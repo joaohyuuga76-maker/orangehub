@@ -60,3 +60,5 @@
 @media(min-width:1180px){.sales-layout{grid-template-columns:minmax(0,1fr) minmax(310px,370px);gap:22px;align-items:start}.sales-summary{grid-template-columns:repeat(4,minmax(0,1fr))}.sales-summary .metric{padding:14px;min-height:132px}.sales-summary .metric strong{font-size:clamp(15px,1.4vw,22px)}.sales-editor{position:sticky;top:20px}}
 
 .sale-form-error{margin:2px 0 0;padding:12px 13px;border:1px solid #a84d3a;background:#43241f;color:#ffd1c3;border-radius:11px;font-size:12px;line-height:1.5}
+
+.modal-backdrop{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:22px;background:#050508bd;backdrop-filter:blur(5px)}.alert-modal{width:min(100%,390px);background:#202128;border:1px solid #48404a;border-radius:22px;padding:27px 24px;box-shadow:0 25px 80px #000a;text-align:center}.alert-modal-icon{width:53px;height:53px;border-radius:17px;background:#583024;color:#ffae78;font-size:29px;font-weight:900;display:grid;place-items:center;margin:0 auto 15px}.alert-modal h2{font-size:20px;margin:0 0 10px}.alert-modal p{font-size:13px;line-height:1.6;color:#c5c5ce;margin:0 0 22px;overflow-wrap:anywhere}.alert-modal .button{width:100%}
