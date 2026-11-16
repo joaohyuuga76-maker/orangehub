@@ -62,3 +62,46 @@
 .sale-form-error{margin:2px 0 0;padding:12px 13px;border:1px solid #a84d3a;background:#43241f;color:#ffd1c3;border-radius:11px;font-size:12px;line-height:1.5}
 
 .modal-backdrop{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:22px;background:#050508bd;backdrop-filter:blur(5px)}.alert-modal{width:min(100%,390px);background:#202128;border:1px solid #48404a;border-radius:22px;padding:27px 24px;box-shadow:0 25px 80px #000a;text-align:center}.alert-modal-icon{width:53px;height:53px;border-radius:17px;background:#583024;color:#ffae78;font-size:29px;font-weight:900;display:grid;place-items:center;margin:0 auto 15px}.alert-modal h2{font-size:20px;margin:0 0 10px}.alert-modal p{font-size:13px;line-height:1.6;color:#c5c5ce;margin:0 0 22px;overflow-wrap:anywhere}.alert-modal .button{width:100%}
+
+/* OrangeDesk: temas claro, escuro e automático */
+.top-actions{display:flex;align-items:center;gap:10px;position:relative}
+.theme-switch{display:flex;align-items:center;gap:2px;padding:4px;border:1px solid #ffffff7d;border-radius:13px;background:#ffffff35;backdrop-filter:blur(8px)}
+.theme-switch button{min-width:32px;height:31px;padding:0 7px;border:0;border-radius:9px;background:transparent;color:#4a240d;font-size:19px;font-weight:800;display:grid;place-items:center}
+.theme-switch button:last-child{font-size:10px;min-width:37px}
+.theme-switch button.selected{background:#fff;color:#ed6a1d;box-shadow:0 2px 9px #81320d33}
+.theme-switch button:focus-visible{outline:2px solid #fff;outline-offset:2px}
+@media(max-width:360px){.top-actions{gap:5px}.theme-switch button{min-width:27px;padding:0 5px}.theme-switch button:last-child{min-width:32px}.avatar{width:31px;height:31px}}
+html[data-theme="light"],html[data-theme="light"] body{background:#f3f4f8;color:#20232c}
+html[data-theme="light"] .app-shell{background:#f7f8fb;box-shadow:0 0 80px #242b3b14}
+html[data-theme="light"] .content-area{color:#222530}
+html[data-theme="light"] .card,html[data-theme="light"] .metric:not(.featured){background:#fff;border-color:#e2e5ed;box-shadow:0 7px 22px #20294209}
+html[data-theme="light"] .section-heading h2,html[data-theme="light"] .card h2,html[data-theme="light"] .card h3,html[data-theme="light"] .task-copy strong,html[data-theme="light"] .metric:not(.featured) strong{color:#232630}
+html[data-theme="light"] .metric:not(.featured) small,html[data-theme="light"] .metric:not(.featured) .metric-foot,html[data-theme="light"] .muted,html[data-theme="light"] .task-copy small{color:#656b79}
+html[data-theme="light"] .date-chip{background:#fff;border-color:#e2e5ed;color:#555b68}
+html[data-theme="light"] .field{background:#f9fafc;border-color:#d8dce5;color:#20232c}
+html[data-theme="light"] .field::placeholder{color:#9297a4}
+html[data-theme="light"] .form-card label,html[data-theme="light"] .login-card label{color:#555b68}
+html[data-theme="light"] .task,html[data-theme="light"] .sale-entry,html[data-theme="light"] .sale-row,html[data-theme="light"] .report-card>div{border-color:#e6e8ef}
+html[data-theme="light"] .task input{border-color:#aab0bb}
+html[data-theme="light"] .task.completed .task-copy strong{color:#9298a3}
+html[data-theme="light"] .task-dot{background:#fff1e8}
+html[data-theme="light"] .tip{background:#fff1e6;border-color:#ffd5b9;color:#34303a}
+html[data-theme="light"] .tip p{color:#776b64}
+html[data-theme="light"] .desktop-quick button,html[data-theme="light"] .cancel-edit{background:#f8f9fc;border-color:#e0e3eb;color:#303540}
+html[data-theme="light"] .sale-entry-head small,html[data-theme="light"] .sale-entry-numbers span,html[data-theme="light"] .report-card>div span{color:#6b7180}
+html[data-theme="light"] .sale-entry-numbers strong{color:#292d38}
+html[data-theme="light"] .sale-entry-numbers .sale-profit strong{color:#e96c1b}
+html[data-theme="light"] .sale-preview{background:#fff5eb;border-color:#ffd9bc;color:#34303a}
+html[data-theme="light"] .edit-sale{background:#fff3e9;border-color:#ffd4b4;color:#bb5415}
+html[data-theme="light"] .empty{color:#777d8a}
+html[data-theme="light"] .nav{background:#fff;border-color:#e3e5ed;box-shadow:0 -8px 24px #252d4210}
+html[data-theme="light"] .nav button{color:#69707d}
+html[data-theme="light"] .nav button.active{color:#f47423;background:#fff2e9}
+html[data-theme="light"] .nav button:hover{background:#fff4eb;color:#ed741f}
+html[data-theme="light"] .sidebar-logo strong{color:#232630}
+html[data-theme="light"] .sidebar-heading>small,html[data-theme="light"] .nav-label,html[data-theme="light"] .sidebar-bottom small{color:#7d8491}
+html[data-theme="light"] .sidebar-bottom{border-color:#e4e7ee}
+html[data-theme="light"] .sidebar-bottom strong{color:#252a34}
+html[data-theme="light"] .integration-card p{color:#646b79}
+html[data-theme="light"] .logout{color:#646b79}
+@media(min-width:900px){html[data-theme="light"] .app-shell{background:#f7f8fb}html[data-theme="light"] .nav{border-right:1px solid #e3e5ed;box-shadow:none}}
